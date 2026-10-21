@@ -1,0 +1,106 @@
+{
+    "selected_model": "Logistic Regression",
+    "feature_names": [
+        "CGPA",
+        "AptitudeTestScore",
+        "Projects",
+        "Internships",
+        "WorkshopsCertifications"
+    ],
+    "target_name": "PlacementStatus",
+    "training_samples": 1280,
+    "test_samples": 320,
+    "feature_importance": {
+        "CGPA": 4.1996,
+        "AptitudeTestScore": 1.8617,
+        "Projects": 1.5112,
+        "Internships": 2.0245,
+        "WorkshopsCertifications": 1.0478
+    },
+    "model_comparison": {
+        "Logistic Regression": {
+            "accuracy": 0.9375,
+            "precision": 0.8769,
+            "recall": 0.8261,
+            "f1_score": 0.8507,
+            "roc_auc": 0.9786,
+            "cv_f1_mean": 0.8733,
+            "cv_f1_std": 0.041,
+            "confusion_matrix": [
+                [
+                    243,
+                    8
+                ],
+                [
+                    12,
+                    57
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "accuracy": 0.8969,
+            "precision": 0.7727,
+            "recall": 0.7391,
+            "f1_score": 0.7556,
+            "roc_auc": 0.9087,
+            "cv_f1_mean": 0.7634,
+            "cv_f1_std": 0.0435,
+            "confusion_matrix": [
+                [
+                    236,
+                    15
+                ],
+                [
+                    18,
+                    51
+                ]
+            ]
+        },
+        "Random Forest": {
+            "accuracy": 0.9187,
+            "precision": 0.8772,
+            "recall": 0.7246,
+            "f1_score": 0.7937,
+            "roc_auc": 0.9577,
+            "cv_f1_mean": 0.8222,
+            "cv_f1_std": 0.0296,
+            "confusion_matrix": [
+                [
+                    244,
+                    7
+                ],
+                [
+                    19,
+                    50
+                ]
+            ]
+        }
+    },
+    "feature_ranges": {
+        "CGPA": {
+            "min": 5.0,
+            "max": 10.0,
+            "mean": 7.25
+        },
+        "AptitudeTestScore": {
+            "min": 0,
+            "max": 100,
+            "mean": 57.52
+        },
+        "Projects": {
+            "min": 0,
+            "max": 10,
+            "mean": 2.15
+        },
+        "Internships": {
+            "min": 0,
+            "max": 6,
+            "mean": 1.09
+        },
+        "WorkshopsCertifications": {
+            "min": 0,
+            "max": 12,
+            "mean": 2.51
+        }
+    }
+}
